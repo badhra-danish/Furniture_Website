@@ -8,12 +8,13 @@
 }
 :root{
     --primary-color: #054C73;
+    --bgcolor-light:#DFE9F4;
+    --bg-color-section:#F2F5FF;
     --white-info:#fff;
     --lorem-content:#606060;
 }
 body{
     width: 100%;
-    font-size: 30px;
 }
 .header{
     width: 100%;
@@ -55,13 +56,14 @@ body{
     width: 100%;
 }
 .hero-img img{
-    width: 100%;;
+    width: 100%;
+ 
     background-size: cover;
 }
 .hero-card-main{
     position: absolute;
     width: 35%;
-    background: #DFE9F4;
+    background:var(--bgcolor-light);
     top:20%;
     right: 5%;
     border-radius: 10px;
@@ -101,7 +103,7 @@ body{
 .authentic-icon-main{
     width: 100%;
     padding: 0 5rem;
-    background-color: #F2F5FF;
+    background-color: var(--bg-color-section);
 }
 .authentic-icon{
     display: flex;
@@ -125,4 +127,127 @@ body{
 .icon-card .icon-name .msg{
     font-size: 0.8rem;
     color: var(--lorem-content);
+}
+/*=========Inspiration Section=============*/
+.inspiration-section-main{
+    width: 100%;
+
+}
+.inspiration-section{
+    padding: 3rem 5rem;
+}
+.section-heading{
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+.section-heading p{
+    font-size: 0.8rem;
+    color: var(--lorem-content);
+    letter-spacing: 2px;
+}
+.inspiration-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.inspiration-card .card{
+      width: 100%;
+}
+.inspiration-card .card img{
+    width: 100%;
+    background-size:cover;
+}
+/*+=================Browse the range sectin============*/
+.browse-section-main{
+    width: 100%;
+    border-bottom: 0.5px solid rgb(211, 211, 211);
+}
+.browse-section{
+    padding: 3rem 5rem;
+}
+.card-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+}
+.card-section .card{
+    width: 30%;
+    text-align: center;
+}
+.card-section .card p{
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+.card-section .card img{
+    width: 100%;
+}
+
+/**************How its works section ************************/
+
+.howitswork-section-main{
+    width: 100%;
+}
+.howitswork-section{
+    width: 100%;
+    padding: 3rem 5rem 6rem;
+}
+.howitswork-card-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.howitswork-card-section .howitswork-card{
+    width: 30%;
+}
+.howitswork-card img{
+    width: 100%;
+}
+.howitswork-card p{
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--lorem-content);
+}
+
+/******************email list section *******************/
+
+.email-list-section-main{
+    width: 100%;
+    background: var(--bg-color-section);
+}
+.email-list-section{
+    padding: 3rem 5rem;
+}
+.email-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.email-input{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.email-input input{
+    padding: 0.5rem;
+    width: 70%;
+    outline: none;
+    border: 2px solid var(--primary-color);
+}
+.email-input button{
+    padding:0.5rem;
+    background-color: var(--primary-color);
+    color: var(--white-info);
+    border: 2px solid var(--primary-color);
+    transition: 0.5s ease;
+}
+.email-input button:hover{
+    color: var(--primary-color);
+    background-color: var(--white-info);
+
 }
