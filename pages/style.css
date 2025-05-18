@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+:root{
+    --primary-color: #054C73;
+    --white-info:#fff;
+    --lorem-content:#606060;
+}
+body{
+    width: 100%;
+    font-size: 30px;
+}
+.header{
+    width: 100%;
+}
+.header-container{
+    width: 100%;
+    height: 80px;
+    padding: 0 5rem; 
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoname{
+    font-size: 1.5rem;
+    color:var(--primary-color) ;
+    font-weight: 600;
+    pointer-events: none;
+}
+.navlist nav{
+    display: flex;
+    list-style: none;
+}
+.navlist nav li a{
+    margin-left: 3rem;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+/*================Hero Section ================*/
+
+.hero-main{
+    width: 100%;
+}
+.hero-img{
+    position: relative;
+    width: 100%;
+}
+.hero-img img{
+    width: 100%;;
+    background-size: cover;
+}
+.hero-card-main{
+    position: absolute;
+    width: 35%;
+    background: #DFE9F4;
+    top:20%;
+    right: 5%;
+    border-radius: 10px;
+}
+.hero-card{
+    margin: 2rem 3rem;
+}
+.hero-card h6{
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+.hero-card .title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+.hero-card .card-content{
+    font-size: 0.8rem;
+    color:var(--lorem-content);
+    margin-bottom: 0.5rem;
+}
+.hero-card .card-btn{
+    background-color: var(--primary-color);
+    width: 50%;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color:var(--white-info);
+    border: none;
+    font-weight: 600;
+    border-radius: 40px;
+}
+
+/****Authentic icon Display ****/
+
+.authentic-icon-main{
+    width: 100%;
+    padding: 0 5rem;
+    background-color: #F2F5FF;
+}
+.authentic-icon{
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    height: 100px;
+}
+.authentic-icon .icon-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.icon-card .icon span{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+.icon-card .icon-name .name{
+    font-size:1.1rem;
+}
+.icon-card .icon-name .msg{
+    font-size: 0.8rem;
+    color: var(--lorem-content);
+}
