@@ -16,12 +16,15 @@
 body{
     width: 100%;
 }
-.header{
-    width: 100%;
-}
 .header-container{
     width: 100%;
-    height: 80px;
+    position: fixed;   
+    z-index: 1;
+   border-bottom: 1px solid var(--primary-color);
+    backdrop-filter:blur(10px);
+}
+.header{
+    height: 70px;
     padding: 0 5rem; 
 }
 .navbar{
@@ -42,9 +45,30 @@ body{
 }
 .navlist nav li a{
     margin-left: 3rem;
+    position: relative;
     color: black;
     text-decoration: none;
     font-size: 1rem;
+    color: var(--primary-color);
+}
+.navlist nav li a::after{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.2rem;
+    width: 3.5rem;
+    overflow: hidden;
+    transform: scale(0);
+    transition: 0.5s ease;
+    transform-origin: left;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.navlist nav li a:hover::after{
+    transform: scale(1);
+    
 }
 /*================Hero Section ================*/
 
@@ -57,7 +81,6 @@ body{
 }
 .hero-img img{
     width: 100%;
- 
     background-size: cover;
 }
 .hero-card-main{
@@ -131,7 +154,6 @@ body{
 /*=========Inspiration Section=============*/
 .inspiration-section-main{
     width: 100%;
-
 }
 .inspiration-section{
     padding: 3rem 5rem;
@@ -162,7 +184,7 @@ body{
 /*+=================Browse the range sectin============*/
 .browse-section-main{
     width: 100%;
-    border-bottom: 0.5px solid rgb(211, 211, 211);
+    border-bottom: 0.5px solid rgb(211, 211, 211); 
 }
 .browse-section{
     padding: 3rem 5rem;
@@ -240,6 +262,7 @@ body{
     border: 2px solid var(--primary-color);
 }
 .email-input button{
+        width: 20%;
     padding:0.5rem;
     background-color: var(--primary-color);
     color: var(--white-info);
@@ -250,4 +273,81 @@ body{
     color: var(--primary-color);
     background-color: var(--white-info);
 
+}
+/*****************footer***********************/
+footer{
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 3rem 2rem;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+.footer-left-part{
+    color: var(--white-info);
+}
+.followus-part p{
+    font-size: 1.2rem;
+    font-weight:600 ;
+    margin-top: 1rem;
+}
+.followus-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+.followus-icon .icon{
+    display: inline-flex;
+    background: var(--white-info);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    border: 2px solid var(--white-info);
+    color: var(--primary-color);
+    transition: 0.5s ease;
+}
+.followus-icon .icon:hover{
+    background: var(--primary-color);
+    border: 2px solid var(--white-info);
+    box-shadow: 2px 3px 5px  var(--bg-color-section);
+    color: var(--white-info);
+}
+.footer-logo h2{
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+}
+.footer-logo p{
+    font-size: 0.8rem;
+}
+.footer-right-part{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-right-part .footer-list{
+    color: var(--white-info);
+    font-size: 0.9rem
+}
+.footer-list h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.footer-list li{
+    list-style: none;
+    margin-top: 0.5rem;
+}
+.copyright{
+    width: 100%;
+    background-color: var(--bg-color-section);
+}
+.copyright-msg{
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
 }
